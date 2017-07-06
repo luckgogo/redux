@@ -13,3 +13,7 @@ render(
   </Provider>,
   document.getElementById('root')
 )
+
+store.subscribe(() =>
+  console.log(store.getState())
+)

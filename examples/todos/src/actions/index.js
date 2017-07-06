@@ -14,3 +14,8 @@ export const toggleTodo = (id) => ({
   type: 'TOGGLE_TODO',
   id
 })
+
+export const addCounter = (counter)=>({
+    type: 'ADD_COUNTER',
+    counter
+})

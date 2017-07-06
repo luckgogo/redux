@@ -4,7 +4,7 @@ import TodoList from '../components/TodoList'
 
 const getVisibleTodos = (todos, filter) => {
   switch (filter) {
-    case 'SHOW_ALL':
+      case 'SHOW_ALL':
       return todos
     case 'SHOW_COMPLETED':
       return todos.filter(t => t.completed)
@@ -16,7 +16,8 @@ const getVisibleTodos = (todos, filter) => {
 }
 
 const mapStateToProps = (state) => ({
-  todos: getVisibleTodos(state.todos, state.visibilityFilter)
+    todos: getVisibleTodos(state.todos, state.visibilityFilter)
+    //state: state
 })
 
 const mapDispatchToProps = {
